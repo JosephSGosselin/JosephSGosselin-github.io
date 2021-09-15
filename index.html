@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+File: index.html
+GUI Assignment: Creating Your First Web Page
+Joseph Gosselin, UMass Lowell Computer Science, joseph_gosselin@student.uml.edu
+Copyright (c) 2021 by Joseph Gosselin. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by JG on September 15, 2021
+
+Description: This assignment shows the skills I have research which includes how to incorpoerate tables, html, css embedded videos and much into a website.
+-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!--sets tab with this name-->
+  <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!--https://www.w3schools.com/css/css_navbar.asp for how to make navigation bar with links-->
+  <nav>
+    <!--class navigation-links makes it easy to group and edit these all at once-->
+    <ul class="navigation-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href=aboutMe.html>About Me</a></li>
+      <li><a href="https://github.com/JosephSGosselin">Github</a></li>
+      <li><a href="documents/resume.docx">Resume</a></li>
+    </ul>
+  </nav>
+  <!--This dive seperates all the titile information on first page from the paragraph-->
+  <div class="title-info">
+    <!--Different headers are used to distinguish size of text-->
+    <h1>Welcome to my Website!</h1>
+    <h2>Joseph Gosselin</h2>
+    <h2>GUI Section 201</h2>
+  </div>
+  <!--body parageaph made with seperate div-->
+  <div class="homepage-body">
+    <p>Hello! So, a quick introduction. My name is Joseph Gosselin, and this is my first time using HTML.<br>
+      This is for my first homework assigment, where I am supposed to show some knowledge I have gained from researching
+      HTML and CSS! <br>
+      Please feel free to look around and checkout the links provided above. <br>
+      Also... Please enjoy the picture of the baby goose!
+    </p>
+  </div>
+  <!--This is a class named goose. Provides an image of a baby goose-->
+  <div class="goose">
+    <img src="images/goose.jpeg" alt="Image of baby goose.">
+  </div>
+
+</body>
+
+</html>

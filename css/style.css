@@ -1,0 +1,73 @@
+/*Used to set background image for website*/
+body {
+	background-image: url("/images/background.jpg");
+}
+
+/* centered and colored the title-info class on first page */
+.title-info {
+	text-align: center;
+	color: rgba(17, 52, 209, 0.849);
+}
+
+/*used for both index.html and aboutMe.html. Sets the links color size position etc*/
+.navigation-links li {
+	font-size: 25px;
+	color: white;
+	display: inline;
+	margin: 7mm;
+}
+
+/*https://www.jsdiaries.com/how-to-remove-html-purple-link-an-easy-solution/#:~:text=Specifically%2C%20a%20purple%20link%20indicates,link%20has%20already%20been%20visited.
+  This link showed me how to remove color of link that has been visited.*/
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+/*sets link to white instead of blue*/
+a:link {
+	color: white;
+	text-decoration: none;
+}
+/*allows the user to see they are hovering over a link (purple)*/
+a:hover {
+	color: violet;
+}
+/*position and bolder text for homepage body */
+.homepage-body {
+	text-align: center;
+	font-weight: bolder;
+}
+/*position for goose image*/
+.goose {
+	text-align: center;
+}
+/*set position to tabe into center of the page*/
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+/* https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table3 */
+table,
+th,
+td {
+	border: 1px solid black;
+}
+/*this just changes the attributes of th within the table (headers) to the color green and size */
+th {
+	color: green;
+	font-size: 20px;
+}
+
+/*the following are aligning the text and images to the correct position */
+.Family {
+	text-align: center;
+}
+.ball {
+	float: left;
+}
+.ball2 {
+	float: right;
+}
+.Education {
+	text-align: center;
+}
