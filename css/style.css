@@ -1,6 +1,6 @@
 /*Used to set background image for website*/
 body {
-	background-image: url("images/background.jpeg");
+	background-image: url("/images/background.jpeg");
 }
 
 /* centered and colored the title-info class on first page */
