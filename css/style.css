@@ -1,6 +1,7 @@
 /*Used to set background image for website*/
 body {
 	background-image: url("../images/background.jpeg");
+	background-size: cover;
 }
 
 /* centered and colored the title-info class on first page */
