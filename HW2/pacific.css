@@ -1,0 +1,117 @@
+/*
+  website path: https://josephsgosselin.github.io/JosephSGosselin-github.io/HW2_sourceCode/index.html 
+  Graphical User Interface HW2: 
+  Style a Site with External CSS
+  Name: Joseph Gosselin
+  Email: Joseph_gosselin@student.uml.edu
+  Goal: The goal of this assignment was to use CSS to rearrange a webpage by referencing a screenshot provided
+	without editing a HTML file.
+  Date: 9-29-2021
+*/
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+/*centers all content within body. must set width before margin-left :auto etc to center.
+also added background image.*/
+body {
+	background-color: white;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 600px;
+	background-image: url("ptrbackground.jpg");
+
+}
+
+/* image placed and set to the right. picture didnt fill in everything so matched color */
+header {
+	background-image: url("sunset.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	color: white;
+	background-color: #040735;
+
+}
+
+/*just adjusted spacing and what not. Found out Margin is typically used to space out from other items, and padding to make itself bigger*/
+nav ul {
+	font-size: 1.2em;
+	float: left;
+	margin-right: 20px;
+	list-style-type: none;
+	font-weight: bold;
+	padding-left: 20px;
+
+}
+/* just decoration stuff */
+#content ul {
+	list-style-image: url("marker.gif");
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:link{
+	text-decoration: none;
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+/* for h1 and h2, just played around with margin and padding to look good */
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+}
+h2 {
+	color: #3399CC;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-top: 10px;
+	margin-bottom: 17px;
+	
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+#contact {
+	font-size: 90%;
+	
+}
+dt {
+	color: #000033;
+}
+/*just margin looks. Margin left must match with #content so the blue bar is lined up */
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	background-color: white;
+	margin-left: 155px;
+	padding-bottom: 10px;
+	padding: 20px;
+}
+
+#wrapper {
+	background-color: lightblue;
+
+}
+
+#content {
+	background-color: white;
+	margin-left: 155px;
+	padding: 20px;
+}
+/* imaged floated left so that the other text content will flow along side it*/
+img{
+	float: left;
+	margin-right: 30px;
+}
+.resort {
+	font-weight: bold;
+	color: rgb(97, 116, 134);
+}
+
+
+
