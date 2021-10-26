@@ -1,0 +1,50 @@
+#input-form, input, label{
+    margin: auto;
+    display: block;
+    max-width: 50%;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.removed-Value {
+    border: none;
+}
+ th,tr {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+#mult-Table{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.table-content {
+    margin-top: 1em;
+    border: 1px solid black;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    max-width: 40em;
+    max-height: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: scroll;
+
+}
+
+tr:first-child, th:first-child {
+    border: px solid black;
+    color: red;
+}
+tr:not(tr:first-child) {
+    color: blue;
+}
+body {
+    background-color: khaki;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: large;
+}
+
+

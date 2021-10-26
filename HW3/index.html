@@ -1,0 +1,63 @@
+<!doctype html>
+
+<!--
+File: index.html
+GUI Assignment: Creating Multiplication table
+Joseph Gosselin, UMass Lowell Computer Science, joseph_gosselin@student.uml.edu
+Copyright (c) 2021 by Joseph Gosselin. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by JG on October 20, 2021
+Description: Allows user to input values and displays a multiplication table.
+-->
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Multiplication Table</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--Form for the user to input values...-->
+  <form id="input-form">
+    <label for="startX">Starting X:</label>
+    <input type="text" id="startX" name="startX">
+    <label for="endX">Ending X:</label>
+    <input type="text" id="endX" name="endX" >
+    <label for="startY">Starting Y:</label>
+    <input type="text" id="startY" name="startY">
+    <label for="endY">Ending Y:</label>
+    <input type="text" id="endY" name="endY">
+    <input type="button" onclick="getValues();" value="Submit">
+  </form>
+
+  <!--Creates a default table when the page is initailly loaded-->
+  <div class="table-content">
+    <table id="mult-Table">
+      <tr>
+        <th class="removed-Value"></th>
+        <th>1</th>
+      </tr>
+      <tr>
+        <th>1</th>
+        <th>1</th>
+      </tr>
+    </table>
+  </div>
+
+
+
+  <script type="text/javascript" src="js/actions.js"></script>
+</body>
+
+</html>
