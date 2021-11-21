@@ -1,0 +1,86 @@
+<!--
+File: index.html
+GUI Assignment: Creating Multiplication table
+Joseph Gosselin, UMass Lowell Computer Science, joseph_gosselin@student.uml.edu
+Copyright (c) 2021 by Joseph Gosselin. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by JG on Nov. 20, 2021
+Description: Allows user to input values and displays a multiplication table.
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Multiplication Table</title>
+
+  <link href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css' rel='stylesheet'
+    type='text/css'>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!--
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+-->
+</head>
+
+<body>
+
+  <!--helped to get my content and table possitioned correctly.-->
+  <div class='center-content'>
+    <!--Form for the user to input values...-->
+    <form id="input-form">
+      <label for="startX">X1:</label>
+      <input type="number" id="startX" name="startX" placeholder="Please enter a Number" required>
+      <div class="slider" id="sliderX1"></div>
+      <label for="endX">X2:</label>
+      <input type="number" id="endX" name="endX" placeholder="Please enter a Number" required>
+      <div class="slider" id="sliderX2"></div>
+      <label for="startY">Y1:</label>
+      <input type="number" id="startY" name="startY" placeholder="Please enter a Number" required>
+      <div class="slider" id="sliderY1"></div>
+      <label for="endY">Y2:</label>
+      <input type="number" id="endY" name="endY" placeholder="Please enter a Number" required>
+      <div class="slider" id="sliderY2"></div>
+      <!-- <input type="button" id="myButton" value="Submit" > -->
+      <input type="button" id="add_tab" value="Add Tab">
+      <input type="button" id="removeSelected" value="Remove All Tabs">
+
+    </form>
+
+    <!--Creates a default table when the page is initailly loaded-->
+    <div class="table-content">
+      <table id="mult-Table">
+        <tr>
+          <th class="removed-Value"></th>
+          <th>0</th>
+        </tr>
+        <tr>
+          <th>0</th>
+          <th>0</th>
+        </tr>
+      </table>
+    </div>
+
+    <!--Used to setup the tabs, when query saves/deltes them-->
+    <div id="tabs">
+      <ul id=tab-names>
+      </ul>
+
+    </div>
+
+    <!--These are the cdn for the jquery validator...-->
+    <!-- <script type="text/javascript" src="js/actions.js"></script>-->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.3.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/additional-methods.min.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
+</body>
+
+</html>
