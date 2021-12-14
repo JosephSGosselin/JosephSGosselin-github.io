@@ -1,0 +1,70 @@
+<!doctype html>
+
+<!--
+File: index.html
+GUI Assignment: Creating Multiplication table
+Joseph Gosselin, UMass Lowell Computer Science, joseph_gosselin@student.uml.edu
+Copyright (c) 2021 by Joseph Gosselin. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by JG on December 12, 2021
+Description: Sets up the rack and the board for the game Scrabble
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Scrabble</title>
+
+    <!-- this is for the css rules -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- this gets the bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <!-- setups area where the player tiles are placed -->
+    <div id="rack" class="row justify-content-center">
+        <h1>This is my rack</h1>
+        <div class="tile1 col-md-1"> </div>
+        <div class="tile2 col-md-1" ></div>
+        <div class="tile3 col-md-1"></div>
+        <div class="tile4 col-md-1"></div>
+        <div class="tile5 col-md-1"></div>
+        <div class="tile6 col-md-1"></div>
+        <div class="tile7 col-md-1"></div>
+    </div>
+    <!-- Creates spacing to make easier to see -->
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <!-- this is the actual scrabble board. It allows the player to drop tiles here. -->
+    <div id = "board" class="row justify-content-center">
+        <br><br><br><br><br><br><br><br><br><br>
+        <div class="space space1 col-md-2"></div>
+        <div class="space space2 col-md-2" ></div>
+        <div class="space space3 col-md-2"></div>
+        <div class="space space4 col-md-2"></div>
+        <div class="space space5 col-md-2"></div>
+        <div class="space space6 col-md-1" ></div>
+        <div class="space space7 col-md-1"></div>
+    </div>
+    <!-- https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click -->
+    <button onClick="window.location.reload();">Restart Game</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

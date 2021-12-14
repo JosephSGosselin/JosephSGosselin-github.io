@@ -1,0 +1,31 @@
+/* 
+
+File: style.css
+GUI Assignment: Creating Multiplication table
+Joseph Gosselin, UMass Lowell Computer Science, joseph_gosselin@student.uml.edu
+Copyright (c) 2021 by Joseph Gosselin. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by JG on December 12, 2021
+Description: Colors and formats the html to make things easier to read
+*/
+
+/* colors the area where the player rack is located so where you can redrop your tiles */
+#rack {
+    background-color: yellow;
+}
+
+/* shows droppable spots for the board. */
+.space {
+    border:1px solid blue;
+}
+/* added special tile to this square */
+.space5 {
+    background-image: url('../images/triple_letter_score.png'); 
+    background-repeat: no-repeat;
+}
+
+/* also adds special tiles here */
+.space.space1 {
+    background-image: url('../images/double_word_score.png'); 
+    background-repeat: no-repeat;
+}
