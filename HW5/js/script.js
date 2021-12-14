@@ -21,7 +21,7 @@ class tile {
 let tilesArray = new Array(0)
 
 //generates all the tiles and stores them in array
-$.getJSON("../json/pieces.json", function(data){
+$.getJSON("HW5/json/pieces.json", function(data){
     $.each(data.pieces, function(index,value){
 
         //loop creates the total amount of tiles for each letter
