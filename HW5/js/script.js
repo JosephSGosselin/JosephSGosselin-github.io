@@ -81,7 +81,7 @@ setTimeout(function(){
     } );
 
 
-},100
+},1000
 )
 
 
