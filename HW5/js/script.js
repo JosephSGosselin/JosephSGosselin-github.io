@@ -26,7 +26,7 @@ $.getJSON("./json/pieces.json", function(data){
 
         //loop creates the total amount of tiles for each letter
         for (i = 0; i < value["amount"]; i++){
-            tilesArray.push(new tile(value["letter"],value["value"],("../images/Tiles/Scrabble_Tile_" + value.letter + ".jpg")))
+            tilesArray.push(new tile(value["letter"],value["value"],("./images/Tiles/Scrabble_Tile_" + value.letter + ".jpg")))
         }
                 
     });
